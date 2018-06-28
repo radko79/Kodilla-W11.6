@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3 {
+  font-family: "Roboto Slab", serif;
+}
+
+p {
+  text-transform: capitalize;
+}
+
+.board {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.board h1,
+.board h2,
+.board h3 {
+  line-height: 2.5em;
+  padding-left: 50px;
+  padding-right: 50px;
+  letter-spacing: 2.5px;
+  border-bottom: 5px solid #ffffff;
+  text-transform: uppercase;
+  color: #050300;
+}
+
+.board h1 {
+  border-bottom: 5px solid #fcd094;
+}
+
+.board .create-column,
+.board .btn-delete,
+.board .add-card,
+.board .edit {
+  cursor: pointer;
+  background-color: #583507;
+  border: 0;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.board .create-column {
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.board .create-column .fa {
+  padding: 0px 15px 0px 5px;
+}
+
+.board .column-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.board .column-container .column {
+  position: relative;
+  text-align: center;
+  min-height: 250px;
+  width: 300px;
+  margin: 75px 25px 25px 25px;
+  background-color: #fcd094;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 20px #050300;
+}
+
+.board .column-container .column .column-title {
+  margin-top: 0px;
+  padding-bottom: 20px;
+}
+
+.board .column-container .column .btn-delete,
+.board .column-container .column .add-card {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.board .column-container .column .btn-delete {
+  top: 10px;
+  right: 10px;
+}
+
+.board .column-container .column .add-card {
+  top: 50px;
+  right: 10px;
+}
+
+.board .column-container .column .column-card-list {
+  list-style-type: none;
+  min-height: 200px;
+  margin: 0;
+  -webkit-padding-start: 0px;
+}
+
+.board .column-container .column .column-card-list .card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #583507;
+  list-style: none;
+  height: 30px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.board .column-container .column .column-card-list .card .btn-delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.board .column-container .column .column-card-list .card .card-description {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.board .column-container .column .column-card-list .card .edit {
+  position: absolute;
+  left: 10px;
+}
+
+.card-placeholder {
+  background-color: rgba(255, 255, 255, 0.55);
+  border: 1px dashed rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.board .column-container .column .portlet {
+    min-height: 30px;
+    margin: 0 1em 1em 0;
+    padding: 0.3em;
+    background: grey;
+  }
+
+.board .column-container .column .portlet-header {
+    padding: 0.2em 0.3em;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+.board .column-container .column .portlet-toggle {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -8px;
+}
+
+.board .column-container .column .portlet-content {
+    padding: 0.4em;
+}
+
+.board .column-container .column .portlet-placeholder {
+    border: 1px dotted black;
+    margin: 0 1em 1em 0;
+    height: 50px;
+}

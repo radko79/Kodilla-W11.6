@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab')
+
+$font-robotoSlab: "Roboto Slab", serif
+$color-brown: #AA7939
+$color-white: #ffffff
+$color-brown: #583507
+$color-almostBlack: #050300
+$color-beige: #fcd094 
+
+body
+	margin: 0
+	padding: 0
+
+p,
+h1, 
+h2, 
+h3
+	font-family: $font-robotoSlab
+
+p
+	text-transform: capitalize
+
+.board
+	margin: 0 auto
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	max-width: 1200px
+
+	h1,
+	h2,
+	h3,
+		line-height: 2.5em
+		padding-left: 50px
+		padding-right: 50px
+		letter-spacing: 2.5px
+		border-bottom: 5px solid $color-white
+		text-transform: uppercase
+		color: $color-almostBlack
+
+	h1
+		border-bottom: 5px solid rgba(252, 208, 148, 1)
+	
+	.create-column,
+	.btn-delete,
+	.add-card,
+	.edit
+		cursor: pointer
+		background-color: $color-brown
+		border: 0
+		color: $color-white
+		padding: 5px
+
+	.create-column
+		font-family: $font-robotoSlab
+		font-size: 18px
+		border-radius: 5px
+
+		.fa
+			padding: 0px 15px 0px 5px
+
+	.column-container
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		align-items: center
+		justify-content: center
+		
+		.column
+			position: relative
+			text-align: center
+			min-height: 250px
+			width: 300px
+			margin: 75px 25px 25px 25px
+			background-color: $color-beige
+			border-radius: 10px
+			padding: 10px
+			box-shadow: 0 0 20px $color-almostBlack
+			
+			.column-title
+				margin-top: 0px
+				padding-bottom: 20px
+
+			.btn-delete,
+			.add-card
+				position: absolute
+				height: 30px
+				width: 30px
+				border-radius: 50%
+			
+			.btn-delete
+				top: 10px
+				right: 10px
+
+			.add-card
+				top: 50px
+				right: 10px
+
+			.column-card-list
+				list-style-type: none;
+				min-height: 200px
+				margin: 0
+				-webkit-padding-start: 0px;
+
+				.card
+					position: relative
+					display: flex
+					align-items: center
+					justify-content: center
+					background-color: $color-brown
+					list-style: none
+					height: 30px
+					border-radius: 10px
+					margin-bottom: 10px
+
+					.btn-delete
+						position: absolute
+						top: 0
+						right: 0
+
+					.card-description
+						display: flex
+						align-items: center
+						color: $color-white
+
+					.edit
+						position: absolute
+						left: 10px
+
+.card-placeholder 
+	background-color: rgba(255, 255, 255, 0.55)
+	border: 1px dashed rgba(0, 0, 0, 0.3)
+	border-radius: 5px
+
+				
+				
